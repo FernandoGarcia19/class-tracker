@@ -5,6 +5,7 @@
 
 @theme{
   --color-darkblue: #052845;
+  --color-darkestblue: #021B2C;
   --color-lightblue: #C1CED9;
 }
 
@@ -15,18 +16,18 @@
     background: #F2F2F2;
   }
   h1 {
-    @apply mx-auto max-w-4xl text-center font-bold;
+    @apply text-3xl mx-auto max-w-4xl text-center font-bold;
   }
   h2 {
-    @apply text-xl font-bold sm:text-3xl;
+    @apply text-xl font-bold;
   }
 }
 
 @layer components {
   .container {
-    @apply p-4 flex flex-col items-center justify-center max-w-none min-w-full bg-white rounded-lg shadow;
+    @apply p-4 flex flex-col justify-center max-w-none min-w-full bg-white rounded-lg shadow;
   }
   .blue-container {
-    @apply p-3 items-center justify-center text-white rounded-lg shadow bg-darkblue; 
+    @apply p-4 m-4 items-center justify-center w-full max-w-xl text-white rounded-lg shadow bg-darkblue hover:bg-darkestblue cursor-pointer;
   }
 }
