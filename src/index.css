@@ -25,9 +25,9 @@
 
 @layer components {
   .container {
-    @apply p-4 flex flex-col justify-center max-w-none min-w-full bg-white rounded-lg shadow;
+    @apply p-4 m-7 flex flex-col justify-center max-w-none bg-white rounded-lg shadow;
   }
   .blue-container {
-    @apply p-4 m-4 items-center justify-center w-full max-w-xl text-white rounded-lg shadow bg-darkblue hover:bg-darkestblue cursor-pointer;
+    @apply p-4 m-4 items-center justify-center text-center w-full max-w-xl text-white rounded-lg shadow bg-darkblue hover:bg-darkestblue cursor-pointer;
   }
 }
