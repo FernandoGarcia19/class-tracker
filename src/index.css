@@ -7,6 +7,7 @@
   --color-darkblue: #052845;
   --color-darkestblue: #021B2C;
   --color-lightblue: #C1CED9;
+  --color-background: #F2F2F2;
 }
 
 @layer base {
@@ -29,5 +30,8 @@
   }
   .blue-container {
     @apply p-4 m-4 items-center justify-center text-center w-full max-w-xl text-white rounded-lg shadow bg-darkblue hover:bg-darkestblue cursor-pointer;
+  }
+  .content-box {
+    @apply bg-background p-4 m-4 items-center justify-center text-center w-full max-w-xl text-darkblue rounded-lg shadow;
   }
 }

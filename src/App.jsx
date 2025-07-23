@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { useDataContext } from './context/DataContext'; // 👈 use the hook
+import { useDataContext } from './context/DataContext';
 
 function App() {
   const { dataLoaded } = useDataContext();

@@ -34,7 +34,7 @@ export const DataProvider = ({ children }) => {
 
         // Save to localStorage
         localStorage.setItem("horarios", JSON.stringify(horarios));
-        localStorage.setItem("clases", JSON.stringify(clases));
+        localStorage.setItem("classes", JSON.stringify(clases));
 
         // Create maps
         setClasesMap(new Map(clases.map(c => [c._id, c])));
