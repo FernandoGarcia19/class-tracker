@@ -4,6 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { useDataContext } from '../context/DataContext';
+import { Link } from 'react-router-dom';
 
 function loadAulas(index, aulas) {
   switch (index) {
@@ -85,7 +86,9 @@ export default function AulaTabsPanel() {
             {
               loadAulas(0, aulas).map((aula, index) => (
                 <div key={index}>
-                  {aula}
+                  <Link to={`/aula/${encodeURIComponent(aula)}`}>
+                    {aula}
+                  </Link>
                 </div>
               ))
             }
@@ -93,12 +96,15 @@ export default function AulaTabsPanel() {
         </AulaTabs>
         <AulaTabs value={value} index={1}>
           <div className="content-box">
-            {
+            { 
               loadAulas(1, aulas).map((aula, index) => (
                 <div key={index}>
-                  {aula}
+                  <Link to={`/aula/${encodeURIComponent(aula)}`}>
+                    {aula}
+                  </Link>
                 </div>
               ))
+              
             }
           </div>
         </AulaTabs>
@@ -107,7 +113,9 @@ export default function AulaTabsPanel() {
             {
               loadAulas(2, aulas).map((aula, index) => (
                 <div key={index}>
-                  {aula}
+                  <Link to={`/aula/${encodeURIComponent(aula)}`}>
+                    {aula}
+                  </Link>
                 </div>
               ))
             }
@@ -118,7 +126,9 @@ export default function AulaTabsPanel() {
             {
               loadAulas(3, aulas).map((aula, index) => (
                 <div key={index}>
-                  {aula}
+                  <Link to={`/aula/${encodeURIComponent(aula)}`}>
+                    {aula}
+                  </Link>
                 </div>
               ))
             }

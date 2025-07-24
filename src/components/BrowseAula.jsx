@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import { useDataContext } from '../context/DataContext';
-import { Tabs, Tab } from '@mui/material';
 import  AulaTabsPanel from './AulaTabs.jsx';
 
 const BrowseAula = () => {
